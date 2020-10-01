@@ -1,0 +1,424 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', Calibri, arial;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bg-img {
+    background: url("../images/background-image.jpg") no-repeat;
+    overflow-x: hidden;
+    background-origin: content-box;
+    background-size: cover;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-google {
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.fa-facebook-f {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.fa-twitter {
+    background-color: #1DA1F2;
+    color: #fff;
+}
+
+.fa-facebook-f::before,
+.fa-twitter::before,
+.fa-google::before {
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.fa-google {
+    background:
+      linear-gradient(to bottom left,transparent 49%,#fbbc05 50%) 0 25%/48% 40%,
+      linear-gradient(to top    left,transparent 49%,#fbbc05 50%) 0 75%/48% 40%,
+
+      linear-gradient(-40deg ,transparent 53%,#ea4335 54%),
+      linear-gradient( 45deg ,transparent 46%,#4285f4 48%),
+      #34a853;
+    background-repeat:no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+.container {
+    background-color: white;
+    display: flex;
+	justify-content: space-around;
+    margin: 130px 21px 130px 10px;
+    padding: 0 90px 0 50px;
+    text-align: center;
+}
+
+.img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content {
+    padding: 150px 0 90px;
+    flex: 60%;
+}
+
+.login-content h2 {
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	margin: 15px 0;
+	text-transform: uppercase;
+}
+
+.register-content {
+    background-color:rgb(72, 128, 239);
+    padding: 60px 20px 50px;
+    flex: 40%;
+}
+
+.signup {
+    margin-top: 130px;
+}
+
+.signup h2 {
+    color: #fff;
+    font-size: 37px;
+    font-weight: 400;
+    letter-spacing: .6px;
+}
+
+.signup span {
+    display: inline-block;
+    color:rgba(255,255,255, .5);
+    font-size: 10px;
+    padding: 20px 0 40px;
+}
+
+nav {
+    overflow: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+nav ul li {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    padding: 6px;
+}
+
+nav ul:last-child {
+    padding-right: 15px;
+}
+
+.input {
+    position: relative;
+}
+
+.input-wrapper {
+    border: 1px solid #f2f2f2;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.input-wrapper > .form-group:first-child {
+    background-color: #f2f2f2;
+}
+
+
+.inputText {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+    height: 25px;
+    margin-top: 6px;
+    width: 200px;
+}
+
+.blocking-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.i {
+	color: #d9d9d9;
+}
+
+.i i {
+	transition: .3s;
+}
+
+.i {
+    padding-right: 15px;
+}
+
+.i img {
+    width: 20px;
+    height: 15px;
+}
+
+.form-group {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.floating-label {
+    color: #cccccc;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    top: 4px;
+    transition: 0.2s ease all;
+}
+
+.floating-label:focus {
+    border: none;
+    outline: none;
+}
+  input:focus ~ .floating-label,
+  input:not(:focus):valid ~ .floating-label {
+    font-size: 12px;
+    top: -6px;
+  }
+
+.btn {
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: #4880EF;
+    clear: both;
+    display: block;
+    font-family: Calibri, arial;
+    font-weight: bold;
+    height: 40px;
+    margin: 0 auto;
+    outline: none;
+    width: 150px;
+}
+
+.textloginwithemail {
+    color: #cccccc;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 15px 0 30px;
+}
+
+.remember-forgot-password {
+    padding: 30px 0 50px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.remember-forgot-password span,
+.remember-forgot-password a {
+    color: #ccc;
+    font-size: 8px;
+}
+
+.remember-forgot-password span {
+    float: left;
+    position: relative;
+}
+
+.remember-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .remember-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark,
+  .fa-ckeck {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 10px;
+    height: 11px;
+    width: 11px;
+    background-color: #ccc;
+    border-radius: 15px;
+  }
+
+  .remember-label input:checked ~ .checkmark {
+    background-color:green;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .remember-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .remember-label .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 2px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .input-wrapper .fa-check {
+    border-radius: 50%;
+    background-color: green;
+    color: #fff;
+    display: none;
+    font-size: 10px;
+    height: 15px;
+    margin-left: 5px;
+    width: 15px;
+}
+
+.input-wrapper .fa-check::before {
+    position: relative;
+    top: 3px;
+}
+
+.remember-forgot-password a {
+    color: #4880EF;
+    float: right;
+    text-decoration: none;
+}
+
+.remember-forgot-password+input {
+    background-color: #4880EF;
+    color: #fff;
+}
+
+.login-successfully {
+    display: none;
+    background-color: green;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.email-error,
+.password-error,
+.email-not-match,
+.password-not-match {
+    color: red;
+    display: none;
+    font-size: 11px;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.pass {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1199px) {
+    body {
+        width: 100%;
+    }
+
+    .register-content {
+        padding: 50px 20px;
+    }
+
+}
+
+ @media screen and (max-width: 991px){
+    .register-content,
+    .login-content {
+        flex: 50%;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .input-wrapper,
+    .remember-forgot-password {
+        width: 250px;
+    }
+
+    .inputText {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+    .login-content,
+    .register-content {
+        flex-direction: column;
+        flex: 100%;
+    }
+
+    nav ul {
+        float: none;
+    }
+
+    .login-content {
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .register-content {
+        padding: 50px 10px;
+    }
+
+    nav ul:last-child {
+        padding: 0;
+    }
+}

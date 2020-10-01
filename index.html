@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <script src="js/app.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="bg-img">
+            <div class="container">
+                <div class="login-content">
+                    <form>
+                        <h2 class="title">Sign IN</h2>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-twitter"></i>
+                        <div class="textloginwithemail">
+                            <span>Or use your email address</span>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="login-successfully">Logged in successfully</div>
+                            <div class="form-group email">
+
+                                <div class="blocking-span">
+                                    <div class="i">
+                                        <img src="images/envelope.png" alt="">
+                                    </div>
+                                    <div class="input">
+                                        <input type="text" id="email" class="inputText" required autocomplete="off"/>
+                                        <span class="floating-label">Email address</span>
+                                    </div>
+                                </div>
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                            <div class="email-not-match">* Email do not match</div>
+                            <div class="email-error">* Invalid email address</div>
+                            <div class="pass form-group">
+                            <div class="blocking-span">
+                                <div class="i">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="input">
+                                    <input type="password" id="password" class="inputText" required>
+                                    <span class="floating-label">Password</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="password-not-match">* Passworrd do not match</div>
+                            <div class="password-error">* Passworrd must be at least 8 characters </div>
+                        </div>
+                        <div class="remember-forgot-password">
+                            <span class="remember">
+                                <label class="remember-label"> Remember me
+                                <input type="checkbox" class="ckeckbox" checked>
+                                <span class="checkmark"></span>
+                                </label>
+                            </span>
+                            <a href="javascript:;">Forgot Password?</a>
+                        </div>
+                        <input type="button" id="btn-submit" class="btn" value="Sign in">
+                    </form>
+                </div>
+                <div class="register-content">
+                    <nav>
+                        <ul>
+                            <a href="javascript:;"><li>Home</li></a>
+                            <a href="javascript:;"><li>Competetions</li></a>
+                            <a href="javascript:;"><li>Trending Weekly</li></a>
+                        </ul>
+                    </nav>
+                    <div class="signup">
+                        <h2>New Here?</h2>
+                        <span>you can create hereand post your experience here.</br>
+                            Share you post increase your view.
+                        </span>
+                        <input type="button" class="btn" value="Sign up">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
